@@ -223,6 +223,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Runs just one time when the keyboard initializes.
 void matrix_init_user(void) {
     ergodox_board_led_off();
+    ergodox_led_all_set(LED_BRIGHTNESS_LO);
 };
 
 // Runs constantly in the background, in a loop.
